@@ -1,1 +1,34 @@
-
+{
+  "author": "Joseph Brick",
+  "commands": [{
+      "script": "main.js",
+      "name": "Table of Contents",
+      "identifier": "tableOfContents",
+      "handlers": {
+        "run": "_tableOfContents"
+      }
+    },
+    {
+      "name": "layersresized",
+      "identifier": "layersresized",
+      "script": "main.js",
+      "handlers": {
+        "actions": {
+          "LayersResized.finish": "_onLayersResizedFinish"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "isRoot": true,
+    "items": [
+      "tableOfContents"
+    ]
+  },
+  "identifier": "josephxbrick-table-of-contents",
+  "homepage": "https://github.com/josephxbrick/table_of_contents_sketch_plugin",
+  "version": "1.0",
+  "description": "Creates a table of contents for a document created by Sketch.",
+  "authorEmail": "jbrick@gmail.com",
+  "name": "Table of contents"
+}
