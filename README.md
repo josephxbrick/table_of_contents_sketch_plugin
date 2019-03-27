@@ -71,6 +71,8 @@ The plug-in will not change the height of any TOC page or symbol instance.
 ### The TOC section-title symbol (optional)
 
 This is the symbol whose instances will be added to the TOC for each section in your document. Place an instance of the symbol on each section-heading artboard. It needs to have a text override called `<tocSectionTitle>` and a text override called `<tocPageNumber>`, but if you don't want your TOC sections to have a page number, you can leave it out or set its opacity to 0.
+
+Important: if you want the sections entries to be the same width as the page entries, make sure your symbols are the same width. (I probably should add some code to enforce this, but someone might want wider section entries.)
   
 Note that these overrides cannot be in nested symbols. Again, it doesn't matter what the symbol or its instances are called.
   
