@@ -48,6 +48,34 @@ To have sections in your TOC, you will need to have a section header artboard th
 
 <img src="/readme_images/section_title_symbol.png" width="380">
 
-### The 
+### The TOC page-title symbol
+
+This is the symbol whose instances will be added to the TOC for each page in your document. It needs to have a text override called '<tocPageTitle>' and a text override called <tocPageNumber>. Note that these overrides cannot be in nested symbols. Again, it doesn't matter what the symbol or its instances are called.
+  
+<img src="/readme_images/page_entry_symbol.png" width="480">
+
+When added to the TOC, the symbol instances will be stacked upon each other with no space in between, so you'll to build any desired padding into the symbol itself.
+
+You'll also need to set the symbol so that it resizes its content, with the title and page number pinned appropriately. For best results, use this pinning:
+
+<img src="/readme_images/page_entry_pinning_1.png" width="380"> 
+
+<img src="/readme_images/page_entry_pinning_2.png" width="380">
+
+### The TOC section-title symbol (optional)
+
+This is the symbol whose instances will be added to the TOC for each section in your document. It needs to have a text overr called '<tocSectionTitle>' and a text override called <tocPageNumber>. Note that these overrides cannot be in nested symbols. Again, it doesn't matter what the symbol or its instances are called.
+  
+<img src="/readme_images/section_entry_symbol.png" width="390">
+
+Use the same pinning as shown in the section above.
+
+### Trouble-shooting
+
+If you have any issues, check out the sample.sketch file in this repository.
+
+
+
+
 
 
