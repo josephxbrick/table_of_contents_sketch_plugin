@@ -10,11 +10,11 @@ You can customize the look of it however you want, as the TOC is created from sy
 
 ## Setting up the TOC
 
-You'll need to set up your document in a particular way in order for the plug-in to create your table of contents. The sample.sketch file in this repository is set up in that way. 
+You'll need to set up your document in a particular way in order for the plug-in to create your table of contents. The tocsample.sketch file in this repository is set up in that way. 
 
 Note that it doesn't matter how your artboards are ordered in the layer list. The plug-in will use the left-to-right or top-to-bottom order that the artboards are arranged in, so all artboards need to be arranged in a single horizontal row or a single vertical column. (The plug-in will figure out which.) Note that the plugin does not support placing artboards on top artboards, which is a practice I don't quite understand.
 
-For the TOC to use sections, each section must start with a section-heading artboard. Again, check out the sample to see the setup.
+For the TOC to use sections, each section must start with a section-heading artboard. Again, check out the sample sketch file to see the setup.
 
 ### The TOC group
 
