@@ -66,7 +66,9 @@ You'll also need to set the symbol so that it resizes its content, with the titl
 
 ### The TOC section-title symbol (optional)
 
-This is the symbol whose instances will be added to the TOC for each section in your document. Place an instance of the symbol on each section-heading artboard. It needs to have a text override called '<tocSectionTitle>' and a text override called <tocPageNumber>. Note that these overrides cannot be in nested symbols. Again, it doesn't matter what the symbol or its instances are called.
+This is the symbol whose instances will be added to the TOC for each section in your document. Place an instance of the symbol on each section-heading artboard. It needs to have a text override called '<tocSectionTitle>' and a text override called <tocPageNumber>, but if you don't want your TOC sections to have a page number, you can leave it out or set its opacity to 0.
+  
+Note that these overrides cannot be in nested symbols. Again, it doesn't matter what the symbol or its instances are called.
   
 <img src="/readme_images/section_entry_symbol.png" width="390">
 
