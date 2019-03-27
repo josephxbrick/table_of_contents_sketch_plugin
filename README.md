@@ -52,7 +52,7 @@ To have sections in your TOC, you will need to have a section header artboard th
 
 ### The TOC page-title symbol
 
-This is the symbol whose instances will be added to the TOC for each page in your document. It needs to have a text override called '<tocPageTitle>' and a text override called <tocPageNumber>. Note that these overrides cannot be in nested symbols. Again, it doesn't matter what the symbol or its instances are called.
+This is the symbol whose instances will be added to the TOC for each page in your document. It needs to have a text override called `<tocPageTitle>` and a text override called `<tocPageNumber>`. Note that these overrides cannot be in nested symbols. Again, it doesn't matter what the symbol or its instances are called.
   
 <img src="/readme_images/page_entry_symbol.png" width="480">
 
@@ -64,9 +64,11 @@ You'll also need to set the symbol so that it resizes its content, with the titl
 
 <img src="/readme_images/page_entry_pinning_2.png" width="380">
 
+The plug-in will not change the height of any TOC page or symbol instance.
+
 ### The TOC section-title symbol (optional)
 
-This is the symbol whose instances will be added to the TOC for each section in your document. Place an instance of the symbol on each section-heading artboard. It needs to have a text override called '<tocSectionTitle>' and a text override called <tocPageNumber>, but if you don't want your TOC sections to have a page number, you can leave it out or set its opacity to 0.
+This is the symbol whose instances will be added to the TOC for each section in your document. Place an instance of the symbol on each section-heading artboard. It needs to have a text override called `<tocSectionTitle>` and a text override called `<tocPageNumber>`, but if you don't want your TOC sections to have a page number, you can leave it out or set its opacity to 0.
   
 Note that these overrides cannot be in nested symbols. Again, it doesn't matter what the symbol or its instances are called.
   
