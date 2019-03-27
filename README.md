@@ -16,7 +16,7 @@ For the TOC to use sections, each section must start with a section-heading artb
 
 ### The TOC group
 
-The table of contents will live in a group on whichever artboard you wish. It will arrange itself into however many columns it needs depending on the height the group. (The plug-in will prompt you for the pixel spacing between columns, which will be ignored if your TOC is a single column.) Once the TOC created, you can size this group, and the TOC will rearrange itself into properly spaced columns as you size it. 
+The table of contents will live in a group on whichever artboard you wish. It will arrange itself into however many columns it needs depending on the height the group. (The plug-in will prompt you for the pixel spacing between columns, which will be ignored if your TOC is a single column.) Once the TOC created, you can size this group, and the TOC will rearrange itself into properly spaced columns *as you size it*. 
 
 This group must be called `<tocGroup>` This group must contain a rectangle named `<tocGroupRect>`:
 
@@ -34,4 +34,10 @@ Note that the hash character in the default override text (which you see above) 
 
 ### The page title symbol
 
-Each artboard that you want listed in the TOC will need two symbol instances: one containing the name of the page or section, and another containing the page number. Note that a single symbol can contain both, as the plug-in only cares what the text override is named. However, the page number and page name can't be in a nested symbol.
+Each artboard that you want listed in the TOC must have either a page-title instance or a page-section instance on it.
+
+The page title symbol must have a text override named `<pageTitle>`. It doesn't matter what the symbol itself is named:
+
+<img src="/readme_images/page_title_symbol.png" width="335">
+
+
