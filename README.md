@@ -16,7 +16,7 @@ For the TOC to use sections, each section must start with a section-heading artb
 
 ### The TOC group
 
-The table of contents will live in a group on whichever artboard you wish. It will arrange itself into however many columns it needs depending on the height the group. (The plug-in will prompt you for the pixel spacing between columns, which will be ignored if your TOC is a single column.) Once the TOC created, you can size this group, and the TOC will rearrange itself into properly spaced columns *as you size it*. 
+The table of contents will live in a group on whichever artboard you wish. It will arrange itself into however many columns it needs depending on the height the group. (The plug-in will prompt you for the pixel spacing between columns, which will be ignored if your TOC is a single column.) Once the TOC created, you can size this group, and the TOC will rearrange itself into properly spaced columns **as you resize it**. 
 
 This group must be called `<tocGroup>` This group must contain a rectangle named `<tocGroupRect>`:
 
@@ -34,13 +34,13 @@ Note that the hash character in the default override text (which you see above) 
 
 ### The page title symbol
 
-Each artboard that you want listed in the TOC must have either a page-title instance or a page-section instance on it.
+Each artboard that you want listed in the TOC must have either a page-title instance or a section-title instance on it.
 
 The page title symbol must have a text override named `<pageTitle>`. It doesn't matter what the symbol itself is named, and it doesn't matter what the default override text is. 
 
 <img src="/readme_images/page_title_symbol.png" width="380">
 
-And of course, you'll need to set the override text to the name of the page on each artboard with this symbol instance.
+And of course, you'll need to set the override text in each symbol instance to the title of the page. (The plug-in won't make up page names for you!)
 
 ### The page section symbol (optional)
 
@@ -64,7 +64,7 @@ You'll also need to set the symbol so that it resizes its content, with the titl
 
 ### The TOC section-title symbol (optional)
 
-This is the symbol whose instances will be added to the TOC for each section in your document. It needs to have a text overr called '<tocSectionTitle>' and a text override called <tocPageNumber>. Note that these overrides cannot be in nested symbols. Again, it doesn't matter what the symbol or its instances are called.
+This is the symbol whose instances will be added to the TOC for each section in your document. Place an instance of the symbol on each section-heading artboard. It needs to have a text override called '<tocSectionTitle>' and a text override called <tocPageNumber>. Note that these overrides cannot be in nested symbols. Again, it doesn't matter what the symbol or its instances are called.
   
 <img src="/readme_images/section_entry_symbol.png" width="390">
 
@@ -73,9 +73,3 @@ Use the same pinning as shown in the section above.
 ### Trouble-shooting
 
 If you have any issues, check out the sample.sketch file in this repository.
-
-
-
-
-
-
