@@ -24,7 +24,7 @@ This group must be called `<tocGroup>` This group must contain a rectangle named
 
 ### The page number symbol
 
-The page number symbol, which you will put an instance of on each artboard that you want a page number listed, must have a text override named `<pageNumber>`. It doesn't matter what the symbol itself is named. (In the example below it's named `pageNumber`, but you can call it whatever you like. This is so you can still organize your symbols into folders using slashes.)
+The page number symbol, which you will put an instance of on each artboard that you want a page number listed, must have a text override named `<pageNumber>`. It doesn't matter what the symbol itself or any of its instances is named. (In the example below it's named `pageNumber`, but you can call it whatever you like. This is so you can still organize your symbols into folders using slashes.)
 
 <img src="/readme_images/page_number_symbol.png" width="335">
 
@@ -36,8 +36,18 @@ Note that the hash character in the default override text (which you see above) 
 
 Each artboard that you want listed in the TOC must have either a page-title instance or a page-section instance on it.
 
-The page title symbol must have a text override named `<pageTitle>`. It doesn't matter what the symbol itself is named:
+The page title symbol must have a text override named `<pageTitle>`. It doesn't matter what the symbol itself is named, and it doesn't matter what the default override text is. 
 
-<img src="/readme_images/page_title_symbol.png" width="335">
+<img src="/readme_images/page_title_symbol.png" width="380">
+
+And of course, you'll need to set the override text to the name of the page on each artboard with this symbol instance.
+
+### The page section symbol (optional)
+
+To have sections in your TOC, you will need to have a section header artboard that leads each section, and this artboard needs to have an instance of the section-header symbol. This symbol is set up just like the page-title symbol, except its text override must be named `<sectionTitle>`. Again, as with every symbol this plugin uses, it doesn't matter what the symbol or symbol instance is named.
+
+<img src="/readme_images/section_title_symbol.png" width="380">
+
+### The 
 
 
