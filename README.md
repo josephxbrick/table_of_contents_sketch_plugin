@@ -80,7 +80,7 @@ This is the symbol whose instances will be added to the TOC for each section in 
 
 This symbol needs to have a text override called `<tocSectionTitle>` and a text override called `<tocPageNumber>`, but if you don't want your TOC sections to have a page number, you can leave the latter text override out, out or set its opacity to 0.
 
-Important: if you want the sections entries to be the same width as the page entries, make sure those symbols are the same width on the Symbols page. (I probably should add some code to enforce this, but someone might want wider section entries.)
+**Important**: if you want the sections entries to be the same width as the page entries, make sure those symbols are the same width on the Symbols page. (I probably should add some code to enforce this, but someone might want wider section entries.)
   
 <img src="/readme_images/section_entry_symbol.png" width="390">
 
