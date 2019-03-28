@@ -1,6 +1,6 @@
 # Table of contents: a Sketch plugin
 
-Note: this plugin requires Sketch 53.1 or above.
+Note: this plugin requires Sketch 53.2 or above.
 
 This sketch plugin creates a table of contents (TOC) for artboards on the current page. If your document has sections, it will organize the table of contents into sections. It will also page-number your artboards for you. Here is an example of what that looks like:
 
