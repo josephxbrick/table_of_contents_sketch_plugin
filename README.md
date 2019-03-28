@@ -66,7 +66,7 @@ This is the symbol whose instances will be added to the TOC for each page in you
 
 When added to the TOC, the symbol instances will be stacked upon each other with no space in between, so build any desired padding into the symbol itself.
 
-You'll also need to set the symbol so that it resizes its content with the title and page number pinned appropriately. For best results, use this pinning:
+You'll also need to set design this symbol so that it resizes its content, with the title and page number pinned appropriately. For best results, use this pinning:
 
 <img src="/readme_images/page_entry_pinning_1.png" width="380"> 
 
