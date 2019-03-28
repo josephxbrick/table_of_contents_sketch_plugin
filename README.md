@@ -22,7 +22,7 @@ For the TOC to use sections, each section must start with a section-heading artb
 
 The table of contents will live in a group on whichever artboard you wish. It doesn't have to be selected in order to update it. The plug-in will arrange the TOC into however many columns it needs depending on the height this group. You will be prompted for the pixel spacing between columns, which will be ignored if your TOC is a single column.
 
-Once the TOC is is created in this group, you can resize this group, and the TOC will rearrange itself into properly spaced columns **as you resize it**. 
+Once the TOC is is created in this group, you can resize the group, and the TOC will rearrange itself into properly spaced columns **as you resize it**. 
 
 This group must be called `<tocGroup>` This group must contain a rectangle named `<tocGroupRect>`:
 
@@ -62,15 +62,15 @@ This is the symbol whose instances will be added to the TOC for each page in you
   
 <img src="/readme_images/page_entry_symbol.png" width="480">
 
-When added to the TOC, the symbol instances will be stacked upon each other with no space in between, so you'll to build any desired padding into the symbol itself.
+When added to the TOC, the symbol instances will be stacked upon each other with no space in between, so build any desired padding into the symbol itself.
 
-You'll also need to set the symbol so that it resizes its content, with the title and page number pinned appropriately. For best results, use this pinning:
+You'll also need to set the symbol so that it resizes its content with the title and page number pinned appropriately. For best results, use this pinning:
 
 <img src="/readme_images/page_entry_pinning_1.png" width="380"> 
 
 <img src="/readme_images/page_entry_pinning_2.png" width="380">
 
-The plug-in will not change the height of any TOC page or symbol instance.
+The symbol instances that the plug-in adds to the TOC will be the same height as the corresponding symbol.
 
 ### The TOC section-title symbol (optional)
 
