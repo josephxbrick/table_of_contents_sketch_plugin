@@ -22,7 +22,7 @@ For the TOC to use sections, each section must start with a section-heading artb
 
 The table of contents will live in a group on whichever artboard you wish. It doesn't have to be selected in order to update it. The plug-in will arrange the TOC into however many columns it needs depending on the height this group. You will be prompted for the pixel spacing between columns, which will be ignored if your TOC is a single column.
 
-Once the TOC created, you can resize this group, and the TOC will rearrange itself into properly spaced columns **as you resize it**. 
+Once the TOC is is created in this group, you can resize this group, and the TOC will rearrange itself into properly spaced columns **as you resize it**. 
 
 This group must be called `<tocGroup>` This group must contain a rectangle named `<tocGroupRect>`:
 
