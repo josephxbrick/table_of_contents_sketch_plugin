@@ -46,7 +46,7 @@ The page title symbol must have a text override named `<pageTitle>`. It doesn't 
 
 And of course, you'll need to set the override text in each symbol instance to the title of the page. (The plug-in won't make up page names for you!)
 
-### The page section symbol (optional)
+### The page-section symbol (optional)
 
 To have sections in your TOC, you will need to have a section header artboard that leads each section, and this artboard needs to have an instance of the section-header symbol. This symbol is set up just like the page-title symbol, except its text override must be named `<sectionTitle>`. Again, as with every symbol this plugin uses, it doesn't matter what the symbol or symbol instance is named.
 
@@ -70,11 +70,12 @@ The plug-in will not change the height of any TOC page or symbol instance.
 
 ### The TOC section-title symbol (optional)
 
-This is the symbol whose instances will be added to the TOC for each section in your document. Place an instance of the symbol on each section-heading artboard. It needs to have a text override called `<tocSectionTitle>` and a text override called `<tocPageNumber>`, but if you don't want your TOC sections to have a page number, you can leave it out or set its opacity to 0.
+This is the symbol whose instances will be added to the TOC for each section in your document. See "The page-section symbol" above for what it takes to make TOC sections. 
+
+This symbol needs to have a text override called `<tocSectionTitle>` and a text override called `<tocPageNumber>`, but if you don't want your TOC sections to have a page number, you can leave the latter text override out, out or set its opacity to 0.
 
 Important: if you want the sections entries to be the same width as the page entries, make sure your symbols are the same width. (I probably should add some code to enforce this, but someone might want wider section entries.)
-  
-Note that these overrides cannot be in nested symbols. Again, it doesn't matter what the symbol or its instances are called.
+
   
 <img src="/readme_images/section_entry_symbol.png" width="390">
 
