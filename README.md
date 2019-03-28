@@ -84,6 +84,6 @@ Important: if you want the sections entries to be the same width as the page ent
 
 Use the same pinning as shown in the section above.
 
-### Trouble-shooting
+### Troubleshooting
 
 If you have any issues, check out the sample.sketch file in this repository.
