@@ -46,7 +46,7 @@ Note that the hash character in the default override text (which you see above) 
 
 Each artboard that you want listed in the TOC must have either a page-title instance or a section-title instance on it.
 
-The page title symbol must have a text override named `<pageTitle>`. It doesn't matter what the symbol itself is named, and it doesn't matter what the default override text is. 
+The page title symbol must have a text override named `<pageTitle>`. It doesn't matter what the sy mbol itself is named, and it doesn't matter what the default override text is. 
 
 <img src="/readme_images/page_title_symbol.png" width="380">
 
@@ -72,7 +72,7 @@ You'll also need to set design this symbol so that it resizes its content, with 
 
 <img src="/readme_images/page_entry_pinning_2.png" width="380">
 
-The symbol instances that the plug-in adds to the TOC will be the same height as the corresponding symbol.
+The symbol instances that the plug-in adds to the TOC will always remain same height as the corresponding symbol.
 
 ### The TOC section-title symbol (optional)
 
