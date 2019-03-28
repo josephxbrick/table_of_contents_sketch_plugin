@@ -4,7 +4,7 @@ Note: this plugin requires Sketch 53.1 or above.
 
 This sketch plugin creates a table of contents (TOC) for artboards on the current page. If your document has sections, it will organize the table of contents into sections. It will also page-number your artboards for you. Here is an example of what that looks like:
 
-<img src="/readme_images/toc_image_3_col.png" width="900">
+<img src="/readme_images/toc_image_new.png" width="900">
 
 You can customize the look of it however you want, as the TOC is created from symbols that you can customize the look of. Note that it does not support text wrapping of the page or section names.
 
