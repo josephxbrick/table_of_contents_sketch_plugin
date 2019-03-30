@@ -4,6 +4,7 @@ function getStringFromUser(prompt, initialValue) {
   let retval = undefined;
   UI.getInputFromUser(
     prompt, {
+      type: UI.INPUT_TYPE.string,
       initialValue: initialValue,
     },
     (err, value) => {
