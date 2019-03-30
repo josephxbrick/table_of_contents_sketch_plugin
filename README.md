@@ -14,7 +14,7 @@ You'll need to set up your document in a particular way in order for the plug-in
 
 Note that it doesn't matter how your artboards are ordered in the layer list. The plug-in will use the left-to-right or top-to-bottom order that the artboards are arranged in, so all artboards need to be arranged in a single horizontal row or a single vertical column. (The plug-in will figure out which.) 
 
-Note that the plugin does not support placing artboards on top of artboards, which is a practice I don't quite understand.
+The plugin does not support placing artboards on top of artboards, which is a practice I don't quite understand.
 
 For the TOC to use sections, each section must start with a section-heading artboard. Again, check out the sample sketch file to see the setup.
 
@@ -79,8 +79,6 @@ The symbol instances that the plug-in adds to the TOC will always remain same he
 This is the symbol whose instances will be added to the TOC for each section in your document. See "The page-section symbol" above for what it takes to make TOC sections. 
 
 This symbol needs to have a text override called `<tocSectionTitle>` and a text override called `<tocPageNumber>`, but if you don't want your TOC sections to have a page number, you can leave the latter text override out, out or set its opacity to 0.
-
-**Important**: if you want the sections entries to be the same width as the page entries, make sure those symbols are the same width on the Symbols page. (I probably should add some code to enforce this, but someone might want wider section entries.)
   
 <img src="/readme_images/section_entry_symbol.png" width="390">
 
