@@ -1,33 +1,26 @@
 @import 'common.js';
 @import 'symbolfunctions.js';
 @import 'artboardfunctions.js';
-const {toArray} = require('util');
-var Settings = require('sketch/settings');
+const {
+  toArray
+} = require('util');
 
+// called from plug-in menu
 // called from plug-in menu
 var _tableOfContents = function(context) {
   let summary = [];
   doc = context.document;
-  let colSpacing = undefined;
   // check if file is set up for creating a TOC
   if (checkTocSetup(doc, summary) !== undefined) {
-    // check if there is a stored setting for column spacing
-    colSpacing = Settings.settingForKey('col-spacing');
+    let colSpacing = getStringFromUser('prompt', 40, 'col-spacing');
     if (colSpacing === undefined) {
-      // there's no stored setting, use default of 40
-      colSpacing = 40;
-    }
-    colSpacing = getStringFromUser("Spacing between columns", colSpacing);
-    if (colSpacing === undefined){
       return;
     }
-    Settings.setSettingForKey('col-spacing', colSpacing);
     pageNumberArtboards(context, summary);
     tableOfContents(context, summary);
   }
   displaySummary(doc, summary);
 }
-
 // called when any layer is resized; this is defined in manifest.json
 var _onLayersResizedFinish = function(context, instance) {
   const action = context.actionContext;
@@ -146,7 +139,7 @@ function createTOC(doc, tocArray) {
   let initColWidth = 100; // this is to make sure that sections are same width as pages
   for (let i = 0; i < tocArray.length; i++) {
     let tocItem = tocArray[i];
-    if (curGroup.length == 0){
+    if (curGroup.length == 0) {
       curGroupName = `TOC group: ${(tocItem.sectionTitle != '<undefined>') ? tocItem.sectionTitle : tocItem.pageTitle}`;
     }
     if (tocItem.sectionTitle != '<undefined>') {
@@ -204,12 +197,7 @@ function createTOC(doc, tocArray) {
 
 function layoutTOC(doc) {
   // get stored colSpacing setting
-  let colSpacing = Settings.settingForKey('col-spacing');
-  if (colSpacing === undefined){
-    colSpacing = 40;
-  } else {
-    colSpacing = Number(colSpacing);
-  }
+  let colSpacing = Number(getStoredValue('col-spacing', 50));
   const page = doc.currentPage();
   const tocGroup = layerWithName(page, MSLayerGroup, '<tocGroup>');
   const tocRect = layerWithName(tocGroup, MSRectangleShape, '<tocGroupRect>')
@@ -219,7 +207,9 @@ function layoutTOC(doc) {
   let groups = toArray(tocGroup.layers()).filter(item => item.class() === MSLayerGroup);
   let curY = curCol = 0;
   // add groups to an array of columns while setting each group's vertical position
-  let columns = [[]];
+  let columns = [
+    []
+  ];
   for (const group of groups) {
     if (curY > 0 && curY + group.frame().height() > tocH) {
       // group extends beyond the height of the TOC, so create new column for it
