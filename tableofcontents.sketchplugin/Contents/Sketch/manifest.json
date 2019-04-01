@@ -25,7 +25,7 @@
       "tableOfContents"
     ]
   },
-  "identifier": "josephxbrick-table-of-contents",
+  "identifier": "https://github.com/josephxbrick/table_of_contents_sketch_plugin",
   "homepage": "https://github.com/josephxbrick/table_of_contents_sketch_plugin",
   "version": "1.0",
   "description": "Creates a table of contents for a document created by Sketch.",
